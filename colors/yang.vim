@@ -15,7 +15,7 @@ let g:colors_name = "yang"
 
 let s:palette = {}
 
-let s:palette.white = [254, '#f7f7f7']
+let s:palette.white = [254, '#ffffff']
 let s:palette.gray15 = [253, '#e4e4e4']
 let s:palette.gray14 = [250, '#bcbcbc']
 let s:palette.gray13 = [249, '#b2b2b2']
