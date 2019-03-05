@@ -77,29 +77,29 @@ function! s:hi(group, fg_color, bg_color, style)
 endfunction
 
 
-call s:hi('Normal', s:palette.gray02, s:palette.white, '')
+call s:hi('Normal', s:palette.gray04, s:palette.white, '')
 set background=light
 
-call s:hi('Constant', s:palette.gray02, [], 'bold')
+call s:hi('Constant', s:palette.gray04, [], 'bold')
 call s:hi('String', s:palette.red, [], '')
 call s:hi('Number', s:palette.red, [], '')
 
-call s:hi('Identifier', s:palette.gray02, [], 'none')
-call s:hi('Function', s:palette.gray02, [], '')
+call s:hi('Identifier', s:palette.gray04, [], 'none')
+call s:hi('Function', s:palette.gray04, [], '')
 
-call s:hi('Statement', s:palette.gray02, [], 'bold')
-call s:hi('Operator', s:palette.gray02, [], 'none')
-call s:hi('Keyword', s:palette.gray02, [], '')
+call s:hi('Statement', s:palette.gray04, [], 'bold')
+call s:hi('Operator', s:palette.gray04, [], 'none')
+call s:hi('Keyword', s:palette.gray04, [], '')
 
-call s:hi('PreProc', s:palette.gray02, [], 'none')
+call s:hi('PreProc', s:palette.gray04, [], 'none')
 
-call s:hi('Type', s:palette.gray02, [], 'bold')
+call s:hi('Type', s:palette.gray04, [], 'bold')
 
-call s:hi('Special', s:palette.gray02, [], '')
+call s:hi('Special', s:palette.gray04, [], '')
 call s:hi('SpecialComment', s:palette.purple, [], 'bold')
 
 call s:hi('Title', s:palette.gray10, [], 'bold')
-call s:hi('Todo', s:palette.purple, s:palette.white, '')
+call s:hi('Todo', s:palette.white, s:palette.purple, '')
 if has("nvim") || has("gui_running")
     call s:hi('Comment', s:palette.purple, [], 'italic')
 else
@@ -111,7 +111,7 @@ call s:hi('FoldColumn', s:palette.gray08, s:palette.gray15, 'none')
 call s:hi('CursorLine', [], s:palette.gray15, 'none')
 call s:hi('CursorLineNr', s:palette.gray06, s:palette.white, 'none')
 
-call s:hi('Visual', s:palette.white, s:palette.gray06, '')
+call s:hi('Visual', [], s:palette.gray13, '')
 call s:hi('Search', s:palette.gray15, s:palette.gray03, 'none')
 call s:hi('IncSearch', s:palette.white, s:palette.gray11, 'bold')
 
@@ -120,9 +120,9 @@ call s:hi('SpellCap', s:palette.red, s:palette.white, 'undercurl')
 call s:hi('SpellLocal', s:palette.red, s:palette.white, 'undercurl')
 call s:hi('SpellRare', s:palette.brown, s:palette.white, 'undercurl')
 
-call s:hi('Error', s:palette.red, s:palette.white, 'bold')
-call s:hi('ErrorMsg', s:palette.red, s:palette.white, '')
-call s:hi('WarningMsg', s:palette.brown, s:palette.white, '')
+call s:hi('Error', s:palette.white, s:palette.red, 'bold')
+call s:hi('ErrorMsg', s:palette.white, s:palette.red, '')
+call s:hi('WarningMsg', s:palette.white, s:palette.brown, '')
 call s:hi('ModeMsg', s:palette.gray10, [], '')
 call s:hi('MoreMsg', s:palette.gray10, [], '')
 
